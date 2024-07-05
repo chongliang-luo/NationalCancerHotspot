@@ -93,7 +93,7 @@ for(ii in cancer.names){
 ### hotspot analysis: use Getis-Ord G statistics 
 ## US county bound shape data
 # https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
-cb <- st_read("cb_2018_us_county_500k.shp")
+cb <- st_read("cb_2018_us_county_500k/cb_2018_us_county_500k.shp")
 dim(cb) # 3233   10  
 
 ## check state fips,
@@ -108,7 +108,7 @@ cancer.names = c('crc','lung','breast','prostate')
 # color labels for hotspot clusters 
 fc = c("red","orange","lightgrey","deepskyblue1","blue","white")
 set.seed(123)
-pdf('NationalHotspot/git/hotspot_2020_cancer4_G_O.pdf',width=14,height=10)
+# pdf('NationalHotspot/git/hotspot_2020_cancer4_G_O.pdf',width=14,height=10)
 # some analysis code from 
 # https://rpubs.com/heatherleeleary/hotspot_getisOrd_tut
 for(ii in 1:4){
